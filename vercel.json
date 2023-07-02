@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+    }
+  ],
+  "env": {
+    "UVICORN_MAIN": "main:app",
+    "UVICORN_HOST": "0.0.0.0",
+    "UVICORN_PORT": "$PORT"
+  }
+}
