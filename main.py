@@ -11,10 +11,7 @@ APIKEY = os.getenv("API_KEY")
 acc_john = os.getenv("acc_john")
 acc_amy = os.getenv("acc_amy")
 
-rblx_bots = {
-    acc_john,
-    acc_amy
-}
+rblx_bots = {acc_john, acc_amy}
 
 client = Client(random.choice(rblx_bots))
 app = FastAPI()
