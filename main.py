@@ -7,8 +7,8 @@ import asyncio
 import uvicorn
 load_dotenv()
 
-acc_john = os.getenv("acc_john")
-acc_amy = os.getenv("acc_amy")
+acc_john = os.getenv("AccJohn")
+acc_amy = os.getenv("AccAmy")
 RobloxCookie = {acc_john, acc_amy}
 APIKEY = os.getenv("API_KEY")
 
