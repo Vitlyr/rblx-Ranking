@@ -5,6 +5,7 @@ from ro_py.client import Client
 from dotenv import load_dotenv
 import asyncio
 import uvicorn
+import random
 load_dotenv()
 
 acc_john = os.getenv("AccJohn")
